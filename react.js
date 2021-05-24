@@ -20,5 +20,5 @@ const Component = () => {
    );
 };
 
-const domContainer = document.querySelector("#root");
-ReactDOM.render(<HelloWorld />, domContainer);
+const domContainer2 = document.querySelector("#root");
+ReactDOM.render(<HelloWorld />, domContainer2);
