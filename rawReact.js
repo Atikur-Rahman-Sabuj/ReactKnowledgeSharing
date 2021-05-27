@@ -1,4 +1,4 @@
-const e = React.createElement;
+const cElement = React.createElement;
 
 class LikeButton extends React.Component {
    constructor(props) {
@@ -11,9 +11,9 @@ class LikeButton extends React.Component {
          return "You liked this.";
       }
 
-      return e("button", { onClick: () => this.setState({ liked: true }) }, e("div", {}, "Like"));
+      return cElement("button", { onClick: () => this.setState({ liked: true }) }, cElement("div", {}, "Like"));
    }
 }
 
 const domContainer = document.querySelector("#root_raw");
-ReactDOM.render(e(LikeButton), domContainer);
+ReactDOM.render(cElement(LikeButton), domContainer);
